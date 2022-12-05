@@ -13,8 +13,8 @@ const Home = () => {
         <Navbar />
         <WidgetList />
         <div className="charts">
-          <Chart />
           <Featured />
+          <Chart />
         </div>
       </div>
     </div>

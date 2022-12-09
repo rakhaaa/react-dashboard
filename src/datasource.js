@@ -13,6 +13,28 @@ export const userColumns = [
         </div>
       );
     }
+  },
+  {
+    field: "email",
+    headerName: "Email",
+    width: 230
+  },
+  {
+    field: "age",
+    headerName: "Age",
+    width: 100
+  },
+  {
+    field: "status",
+    headerName: "Status",
+    width: 160,
+    renderCell: (params) => {
+      return (
+        <div className={`cellWithStatus ${params.row.status}`}>
+          {params.row.status}
+        </div>
+      );
+    }
   }
 ];
 
@@ -23,7 +45,7 @@ export const userRows = [
     username: "Ryan Andrew",
     img:
       "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    status: "active",
+    status: "passive",
     email: "ryanandrew@gmail.com",
     age: 34
   },

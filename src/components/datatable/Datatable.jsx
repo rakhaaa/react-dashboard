@@ -4,7 +4,7 @@ import { userColumns, userRows } from "../../datasource";
 
 const Datatable = () => {
   return (
-    <div className="datatable" style={{ height: 400, width: "100%" }}>
+    <div className="datatable">
       <DataGrid
         rows={userRows}
         columns={userColumns}

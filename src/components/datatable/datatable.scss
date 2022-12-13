@@ -5,6 +5,26 @@
   padding: 20px;
   margin: 20px;
 
+  .datatableTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+    .link {
+      color: green;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px;
+      border: 1px solid green;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
   .cellWithImg {
     display: flex;
     align-items: center;
